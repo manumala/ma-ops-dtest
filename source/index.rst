@@ -8,15 +8,19 @@ Welcome to Openswitch Base's documentation!
 
 Contents:
 
+.. _user-docs:
+
 .. toctree::
    :maxdepth: 2
+   :caption: User Documentation
 
-   Introduction
-   Base Architecture
-   Control Plane Service
-   Network Adaptation Service
-   Platform Adaptation Service
-   System Device Interface
+   user_introduction
+
+.. _dev-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Developer Documentation
 
 
 Indices and tables
