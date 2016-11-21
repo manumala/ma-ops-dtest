@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Base System &#8212; Openswitch Base 1.0 documentation</title>
+    <title>Base Architecure &#8212; Openswitch Base 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="Openswitch Base 1.0 documentation" href="index.html" />
-    <link rel="next" title="Build System" href="build.html" />
-    <link rel="prev" title="System Device Interface" href="sdi.html" /> 
+    <link rel="next" title="Control Plane Services" href="cps.html" />
+    <link rel="prev" title="Welcome to Base’s documentation!" href="index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -37,10 +37,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="build.html" title="Build System"
+          <a href="cps.html" title="Control Plane Services"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="sdi.html" title="System Device Interface"
+          <a href="index.html" title="Welcome to Base’s documentation!"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Openswitch Base 1.0 documentation</a> &#187;</li> 
       </ul>
@@ -51,9 +51,22 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="base-system">
-<h1>Base System<a class="headerlink" href="#base-system" title="Permalink to this headline">¶</a></h1>
-<p>The Open switch base system is an innovative operating system for Networking systems. This document describes how it enables you to unleash new and creative ways to deploy, orchestrate, and manage your networking, servers and storage solutions in your data centers and enterprise environments. Base uses an unmodified Linux kernel and standard Linux distribution to take advantage of the rich Linux ecosystem and provide flexibility in customizing base system according to your networking needs.</p>
+  <div class="section" id="base-architecure">
+<h1>Base Architecure<a class="headerlink" href="#base-architecure" title="Permalink to this headline">¶</a></h1>
+<p>This information describes how Base provides an abstraction of hardware devices for network switching platforms in a Linux environment. Each component implements a set of well-defined APIs using full software modularity with hardware and software platform abstraction.</p>
+<div class="section" id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Linux infrastructure</li>
+<li>Control Plane Services (CPS)</li>
+<li>Network adaptation service (NAS)</li>
+<li>Switch Abstraction Interface (SAI)</li>
+<li>Platform adaptation service (PAS)</li>
+<li>System Device Interface (SDI)</li>
+<li>Platform Description Infrastructure</li>
+<li>Applications and tools</li>
+</ul>
+</div>
 </div>
 
 
@@ -62,16 +75,24 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Base Architecure</a><ul>
+<li><a class="reference internal" href="#components">Components</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="sdi.html"
-                        title="previous chapter">System Device Interface</a></p>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Base&#8217;s documentation!</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="build.html"
-                        title="next chapter">Build System</a></p>
+  <p class="topless"><a href="cps.html"
+                        title="next chapter">Control Plane Services</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/user_introduction.txt"
+      <li><a href="_sources/architecture.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -96,10 +117,10 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="build.html" title="Build System"
+          <a href="cps.html" title="Control Plane Services"
              >next</a> |</li>
         <li class="right" >
-          <a href="sdi.html" title="System Device Interface"
+          <a href="index.html" title="Welcome to Base’s documentation!"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Openswitch Base 1.0 documentation</a> &#187;</li> 
       </ul>

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Base System &#8212; Openswitch Base 1.0 documentation</title>
+    <title>System Device Interface &#8212; Openswitch Base 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="Openswitch Base 1.0 documentation" href="index.html" />
-    <link rel="next" title="Build System" href="build.html" />
-    <link rel="prev" title="System Device Interface" href="sdi.html" /> 
+    <link rel="next" title="Base System" href="user_introduction.html" />
+    <link rel="prev" title="Switch Abstraction Interface" href="sai.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -37,10 +37,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="build.html" title="Build System"
+          <a href="user_introduction.html" title="Base System"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="sdi.html" title="System Device Interface"
+          <a href="sai.html" title="Switch Abstraction Interface"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Openswitch Base 1.0 documentation</a> &#187;</li> 
       </ul>
@@ -51,9 +51,23 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="base-system">
-<h1>Base System<a class="headerlink" href="#base-system" title="Permalink to this headline">¶</a></h1>
-<p>The Open switch base system is an innovative operating system for Networking systems. This document describes how it enables you to unleash new and creative ways to deploy, orchestrate, and manage your networking, servers and storage solutions in your data centers and enterprise environments. Base uses an unmodified Linux kernel and standard Linux distribution to take advantage of the rich Linux ecosystem and provide flexibility in customizing base system according to your networking needs.</p>
+  <div class="section" id="system-device-interface">
+<h1>System Device Interface<a class="headerlink" href="#system-device-interface" title="Permalink to this headline">¶</a></h1>
+<p>A system device refers to a hardware component including:</p>
+<p>Fans/cooling devices
+Power supplies
+Temperature sensors
+LEDs
+EEPROM
+Programmable devices.
+Transceivers
+All hardware components except for NPUs are abstracted as system devices. The SDI API defines a low-level platform-independent abstraction for all types of system devices. Only system device drivers that implement the SDI API are hardware-specific — the API itself is hardware-independent.</p>
+<p>The implementation of the SDI API can use any approach suitable for a given platform or vendor:</p>
+<p>sysfs access to Linux kernel device drivers
+User space devices drivers using UIO or other methods
+New vendor-specific kernel modules, accessible through sysfs, netlink or ioctl calls
+Combination of any of the methods above
+Other approaches not mentioned above are also possible, as long as the implementation supports the SDI API.</p>
 </div>
 
 
@@ -63,15 +77,15 @@
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="sdi.html"
-                        title="previous chapter">System Device Interface</a></p>
+  <p class="topless"><a href="sai.html"
+                        title="previous chapter">Switch Abstraction Interface</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="build.html"
-                        title="next chapter">Build System</a></p>
+  <p class="topless"><a href="user_introduction.html"
+                        title="next chapter">Base System</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/user_introduction.txt"
+      <li><a href="_sources/sdi.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -96,10 +110,10 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="build.html" title="Build System"
+          <a href="user_introduction.html" title="Base System"
              >next</a> |</li>
         <li class="right" >
-          <a href="sdi.html" title="System Device Interface"
+          <a href="sai.html" title="Switch Abstraction Interface"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Openswitch Base 1.0 documentation</a> &#187;</li> 
       </ul>

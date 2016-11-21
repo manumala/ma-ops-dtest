@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Base System &#8212; Openswitch Base 1.0 documentation</title>
+    <title>Network Adaptation Service &#8212; Openswitch Base 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="Openswitch Base 1.0 documentation" href="index.html" />
-    <link rel="next" title="Build System" href="build.html" />
-    <link rel="prev" title="System Device Interface" href="sdi.html" /> 
+    <link rel="next" title="Platform Adaptation Service" href="pas.html" />
+    <link rel="prev" title="Control Plane Services" href="cps.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -37,10 +37,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="build.html" title="Build System"
+          <a href="pas.html" title="Platform Adaptation Service"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="sdi.html" title="System Device Interface"
+          <a href="cps.html" title="Control Plane Services"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Openswitch Base 1.0 documentation</a> &#187;</li> 
       </ul>
@@ -51,9 +51,11 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="base-system">
-<h1>Base System<a class="headerlink" href="#base-system" title="Permalink to this headline">¶</a></h1>
-<p>The Open switch base system is an innovative operating system for Networking systems. This document describes how it enables you to unleash new and creative ways to deploy, orchestrate, and manage your networking, servers and storage solutions in your data centers and enterprise environments. Base uses an unmodified Linux kernel and standard Linux distribution to take advantage of the rich Linux ecosystem and provide flexibility in customizing base system according to your networking needs.</p>
+  <div class="section" id="network-adaptation-service">
+<h1>Network Adaptation Service<a class="headerlink" href="#network-adaptation-service" title="Permalink to this headline">¶</a></h1>
+<p>The NAS manages the high-level network processor unit (NPU) abstraction and adaptation. The NAS abstracts and aggregates the core functionality required for networking access at Layer 1 (physical layer), Layer 2 (VLAN, link aggregation), Layer 3 (routing), ACL, QoS, and network monitoring.</p>
+<p>The NAS enables adaptation of the low-level switch abstraction provided by the switch abstraction interface (SAI) for standard Linux networking APIs and interfaces, and SONiC-specific object library API functionality.</p>
+<p>The NAS is also responsible for providing packet I/O services, using the Linux kernel IP stack.</p>
 </div>
 
 
@@ -63,15 +65,15 @@
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="sdi.html"
-                        title="previous chapter">System Device Interface</a></p>
+  <p class="topless"><a href="cps.html"
+                        title="previous chapter">Control Plane Services</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="build.html"
-                        title="next chapter">Build System</a></p>
+  <p class="topless"><a href="pas.html"
+                        title="next chapter">Platform Adaptation Service</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/user_introduction.txt"
+      <li><a href="_sources/nas.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -96,10 +98,10 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="build.html" title="Build System"
+          <a href="pas.html" title="Platform Adaptation Service"
              >next</a> |</li>
         <li class="right" >
-          <a href="sdi.html" title="System Device Interface"
+          <a href="cps.html" title="Control Plane Services"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Openswitch Base 1.0 documentation</a> &#187;</li> 
       </ul>

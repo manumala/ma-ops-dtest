@@ -8,11 +8,23 @@ Welcome to Base's documentation!
 
 Contents:
 
+.. _arch-docs:
+
+.. toctree::
+   :maxdepth: 2
+
+   architecture
+   cps
+   nas
+   pas
+   sai
+   sdi
+
 .. _user-docs:
 
 .. toctree::
    :maxdepth: 2
-   :caption: User Documentation
+   :caption: User Guide
 
    user_introduction
 
@@ -22,6 +34,7 @@ Contents:
    :maxdepth: 2
    :caption: Developer Documentation
 
+   build
 
 Indices and tables
 ==================
